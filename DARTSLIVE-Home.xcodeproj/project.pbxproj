@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DFB29D4A248CD3AC00F7ABC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFB29D49248CD3AC00F7ABC9 /* Main.storyboard */; };
 		DFCF428A248CCA21005DD239 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCF4289248CCA21005DD239 /* AppDelegate.swift */; };
 		DFCF428C248CCA21005DD239 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCF428B248CCA21005DD239 /* SceneDelegate.swift */; };
-		DFCF428E248CCA21005DD239 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCF428D248CCA21005DD239 /* ViewController.swift */; };
-		DFCF4291248CCA21005DD239 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFCF428F248CCA21005DD239 /* Main.storyboard */; };
+		DFCF428E248CCA21005DD239 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCF428D248CCA21005DD239 /* MainViewController.swift */; };
 		DFCF4293248CCA22005DD239 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFCF4292248CCA22005DD239 /* Assets.xcassets */; };
 		DFCF4296248CCA22005DD239 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFCF4294248CCA22005DD239 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DFB29D49248CD3AC00F7ABC9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		DFCF4286248CCA21005DD239 /* DARTSLIVE-Home.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DARTSLIVE-Home.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFCF4289248CCA21005DD239 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFCF428B248CCA21005DD239 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DFCF428D248CCA21005DD239 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DFCF4290248CCA21005DD239 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DFCF428D248CCA21005DD239 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DFCF4292248CCA22005DD239 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFCF4295248CCA22005DD239 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DFCF4297248CCA22005DD239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +37,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DFB29D44248CD31900F7ABC9 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DFB29D46248CD33400F7ABC9 /* Common */,
+				DFB29D45248CD32600F7ABC9 /* Controller */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		DFB29D45248CD32600F7ABC9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DFB29D49248CD3AC00F7ABC9 /* Main.storyboard */,
+				DFCF428D248CCA21005DD239 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DFB29D46248CD33400F7ABC9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DFCF4289248CCA21005DD239 /* AppDelegate.swift */,
+				DFCF428B248CCA21005DD239 /* SceneDelegate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DFB29D47248CD33F00F7ABC9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DFCF4294248CCA22005DD239 /* LaunchScreen.storyboard */,
+				DFCF4292248CCA22005DD239 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DFB29D48248CD34800F7ABC9 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DFCF4297248CCA22005DD239 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		DFCF427D248CCA21005DD239 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +100,9 @@
 		DFCF4288248CCA21005DD239 /* DARTSLIVE-Home */ = {
 			isa = PBXGroup;
 			children = (
-				DFCF4289248CCA21005DD239 /* AppDelegate.swift */,
-				DFCF428B248CCA21005DD239 /* SceneDelegate.swift */,
-				DFCF428D248CCA21005DD239 /* ViewController.swift */,
-				DFCF428F248CCA21005DD239 /* Main.storyboard */,
-				DFCF4292248CCA22005DD239 /* Assets.xcassets */,
-				DFCF4294248CCA22005DD239 /* LaunchScreen.storyboard */,
-				DFCF4297248CCA22005DD239 /* Info.plist */,
+				DFB29D47248CD33F00F7ABC9 /* Resources */,
+				DFB29D44248CD31900F7ABC9 /* Sources */,
+				DFB29D48248CD34800F7ABC9 /* SupportingFiles */,
 			);
 			path = "DARTSLIVE-Home";
 			sourceTree = "<group>";
@@ -125,9 +165,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFB29D4A248CD3AC00F7ABC9 /* Main.storyboard in Resources */,
 				DFCF4296248CCA22005DD239 /* LaunchScreen.storyboard in Resources */,
 				DFCF4293248CCA22005DD239 /* Assets.xcassets in Resources */,
-				DFCF4291248CCA21005DD239 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFCF428E248CCA21005DD239 /* ViewController.swift in Sources */,
+				DFCF428E248CCA21005DD239 /* MainViewController.swift in Sources */,
 				DFCF428A248CCA21005DD239 /* AppDelegate.swift in Sources */,
 				DFCF428C248CCA21005DD239 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +187,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DFCF428F248CCA21005DD239 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DFCF4290248CCA21005DD239 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DFCF4294248CCA22005DD239 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -285,7 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "DARTSLIVE-Home/Info.plist";
+				INFOPLIST_FILE = "DARTSLIVE-Home/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +334,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "DARTSLIVE-Home/Info.plist";
+				INFOPLIST_FILE = "DARTSLIVE-Home/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
