@@ -13,6 +13,7 @@
 		DF6BCB23248FADC100A96D37 /* ZeroOne.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF6BCB22248FADC100A96D37 /* ZeroOne.storyboard */; };
 		DF6BCB2A2490759100A96D37 /* SortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6BCB292490759100A96D37 /* SortViewController.swift */; };
 		DF6BCB2C2490759B00A96D37 /* Sort.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF6BCB2B2490759B00A96D37 /* Sort.storyboard */; };
+		DF6BCB2E24908F3200A96D37 /* ZeroOneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6BCB2D24908F3200A96D37 /* ZeroOneManager.swift */; };
 		DFB29D4A248CD3AC00F7ABC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFB29D49248CD3AC00F7ABC9 /* Main.storyboard */; };
 		DFB29D55248CDEA900F7ABC9 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB29D54248CDEA900F7ABC9 /* Rswift.framework */; };
 		DFB29D58248CDFF300F7ABC9 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB29D57248CDFF300F7ABC9 /* R.generated.swift */; };
@@ -35,6 +36,7 @@
 		DF6BCB22248FADC100A96D37 /* ZeroOne.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ZeroOne.storyboard; sourceTree = "<group>"; };
 		DF6BCB292490759100A96D37 /* SortViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortViewController.swift; sourceTree = "<group>"; };
 		DF6BCB2B2490759B00A96D37 /* Sort.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sort.storyboard; sourceTree = "<group>"; };
+		DF6BCB2D24908F3200A96D37 /* ZeroOneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroOneManager.swift; sourceTree = "<group>"; };
 		DFB29D49248CD3AC00F7ABC9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		DFB29D54248CDEA900F7ABC9 /* Rswift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rswift.framework; path = Carthage/Build/iOS/Rswift.framework; sourceTree = "<group>"; };
 		DFB29D57248CDFF300F7ABC9 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				DFB29D63248CEAA000F7ABC9 /* InputManager.swift */,
+				DF6BCB2D24908F3200A96D37 /* ZeroOneManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF6BCB2E24908F3200A96D37 /* ZeroOneManager.swift in Sources */,
 				DFB29D64248CEAA000F7ABC9 /* InputManager.swift in Sources */,
 				DFB29D69248CF29400F7ABC9 /* InputArea.swift in Sources */,
 				DFB29D61248CE1E500F7ABC9 /* SettingViewController.swift in Sources */,

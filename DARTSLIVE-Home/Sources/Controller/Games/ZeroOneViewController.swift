@@ -12,9 +12,10 @@ class ZeroOneViewController: UIViewController {
     
     private let inputManager = InputManager()
     
-    @IBOutlet weak var label: UILabel!
+    private let zeroOneManager = ZeroOneManager(num: 301)
     
-    var gameNum = 301
+    @IBOutlet private weak var label: UILabel!
+    @IBOutlet private weak var statusLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,22 +34,43 @@ class ZeroOneViewController: UIViewController {
     @objc private func input(_ keyCommand: UIKeyCommand) {
         
         guard let input = keyCommand.input,
-            let inputKey = Keyboard(rawValue: input),
-            let inputArea = inputManager.getInputArea(for: inputKey) else {
+            let inputKey = Keyboard(rawValue: input) else {
             assertionFailure()
             return
         }
-        let num = inputArea.numberForZeroOne
         
-        if gameNum - num >= 0 {
-            gameNum -= num
-        } else {
-            // ホントはバーストとかやるけど
+        switch inputKey {
+        case .return:
+            zeroOneManager.changeRound()
+        case .tab:
+            break
+        default:
+            if let area = inputManager.getInputArea(for: inputKey) {
+                zeroOneManager.input(area)
+            }
         }
+        
         updateLabel()
     }
     
     private func updateLabel() {
-        label.text = "\(gameNum)"
+        label.text = "\(zeroOneManager.displayNum)"
+        
+        if let last = zeroOneManager.rounds.last {
+            var status = [String]()
+            switch last.status {
+            case .throwable:
+                status.append("Throw !!")
+            case .end:
+                status.append("Push Change.")
+            case .burst:
+                status.append("Burst !!!")
+            case .zero:
+                status.append("Clear")
+            }
+            last.point.forEach { status.append("\($0)") }
+            
+            statusLabel.text = status.joined(separator: "\n")
+        }
     }
 }

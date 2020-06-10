@@ -21,11 +21,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Throw !!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxu-5Q-UVI">
+                                <rect key="frame" x="0.0" y="467" width="414" height="60"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="B4M-8J-ntD" firstAttribute="leading" secondItem="RHj-ha-YRb" secondAttribute="leading" constant="20" id="1QY-bh-B7S"/>
                             <constraint firstItem="B4M-8J-ntD" firstAttribute="top" secondItem="RHj-ha-YRb" secondAttribute="top" constant="100" id="4VU-TK-COi"/>
+                            <constraint firstItem="oxu-5Q-UVI" firstAttribute="leading" secondItem="RHj-ha-YRb" secondAttribute="leading" id="VCL-aU-3sl"/>
+                            <constraint firstItem="RHj-ha-YRb" firstAttribute="trailing" secondItem="oxu-5Q-UVI" secondAttribute="trailing" id="Z30-jN-lcS"/>
+                            <constraint firstItem="oxu-5Q-UVI" firstAttribute="top" secondItem="B4M-8J-ntD" secondAttribute="bottom" constant="40" id="afN-Xd-tCb"/>
                             <constraint firstItem="RHj-ha-YRb" firstAttribute="trailing" secondItem="B4M-8J-ntD" secondAttribute="trailing" constant="20" id="qxO-Os-hOa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RHj-ha-YRb"/>
@@ -33,11 +42,12 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="label" destination="B4M-8J-ntD" id="GL1-kp-qJE"/>
+                        <outlet property="statusLabel" destination="oxu-5Q-UVI" id="fvT-lw-fWl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2wz-Xc-pXX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-113" y="86"/>
+            <point key="canvasLocation" x="-113.04347826086958" y="85.714285714285708"/>
         </scene>
     </scenes>
 </document>
